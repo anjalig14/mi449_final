@@ -1,19 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap")
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-body {
-  overflow-x: hidden;
-}
-
-.App {
-  text-align: center;
-}
 
 .App-logo {
   height: 40vmin;

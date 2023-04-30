@@ -1,11 +1,21 @@
-import { TextField } from "@mui/material";
-import './App.css';
-import React from 'react'
+import React, {useState} from 'react'
+import axios from 'axios'
 
 function App() {
+  const [data,setData] = useState({})
+  const [location,setLocation] = useState('')
   
-  //const url ='https://api.openweathermap.org/data/2.5/weather?q=detroit&appid=46cb3a2031676ccd163fe488ad5fb108'
+  const url ='https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=46cb3a2031676ccd163fe488ad5fb108'
   
+  const searchLocation = (event) => {
+    if (event.key === 'Enter') {
+      axios.get(url).then(response) => {
+        setData(response.data)
+        console.log(response.data)
+      })
+    }
+  }
+
   return (
     <div className="App">
       <div className="container">
@@ -22,13 +32,16 @@ function App() {
           </div>
           <div className="botton_container">
             <div className="feels-like">
-              <p>50°F</p>
+              <p className='bold'>50°F</p>
+              <p>Feel Like</p>
             </div>
             <div className="humidity">
-              <p>87%</p>
+              <p className='bold'>87%</p>
+              <p>humidity</p>
             </div>
             <div className="wind">
-              <p>10 MPH</p>
+              <p className='bold'>10 MPH</p>
+              <p>Wind Speed</p>
             </div>
           </div>
         </div>
