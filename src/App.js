@@ -33,9 +33,6 @@ function App() {
         <div>
             <p2 class="text-3xl font-bold text-indigo-500 animate-bounce">TODAY'S WEATHER</p2>
         </div>
-        <p>
-          ''
-        </p>
         <div class="flex justify-center items-center h-screen w-screen">
           <div class="w-10 h-10 bg-black animate-wiggle"></div>
         </div>
