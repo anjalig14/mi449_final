@@ -38,7 +38,7 @@ function App() {
              <p>DETROIT</p>
           </div>
           <div className="temp">
-            {data.main ? <h1 text-2xl font-bold underline >{data.main.temp}°F</h1> : null}
+            {data.main ? <h1 text-2xl font-bold underline >{data.main.temp}°K</h1> : null}
             <h1 text-2xl font-bold underline>46°F</h1>
           </div>
           <div className="description">

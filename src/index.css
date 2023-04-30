@@ -15,7 +15,7 @@ body {
   background-color: rgb(184, 200, 206);
   text-align: justify;
   font-size: 1rem;
-  bottom: 0;
+  bottom: 0.5rem;
 }
 
 p {
@@ -36,11 +36,13 @@ h1 {
 }
 
 h4 {
+  font-size: small;
   text-align: center;
   padding: 1rem;
 }
 
 li {
+  font-size: x-small;
   text-align: center;
   font-family: 'Montserrat';
 }
