@@ -43,7 +43,7 @@ function App() {
           </div>
           <div className="description">
             {data.weather ? <p1>{data.weather[0].main}</p1> : null}
-            <br><p1>CLOUDY</p1>
+            <p1>CLOUDY</p1>
           </div>
           <div className="image">
             <img src='images/cloudy.png' alt='cloudy' height="300px" width="450px"/>
