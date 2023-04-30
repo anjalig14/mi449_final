@@ -28,10 +28,10 @@ function App() {
         placeholder='ENTER LOCATION'
         type="text"/>
       </div>
-      <div class="backdrop-saturate-200" className="container">
+      <div className="container">
         <div className="top">
         <div>
-            <p2 class="text-3xl font-bold text-indigo-500">TODAY'S WEATHER</p2>
+            <p2>TODAY'S WEATHER</p2>
         </div>
           <div className="location">
              {data.main ? <p>{data.name}</p> : null}
@@ -45,7 +45,9 @@ function App() {
             {data.weather ? <p1>{data.weather[0].main}</p1> : null}
             <p1>CLOUDY</p1>
           </div>
-          
+          <div className="image">
+            <img src='images/cloudy.png' alt='cloudy' height="300px" width="450px" />
+          </div>
         </div>
 
         
