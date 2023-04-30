@@ -31,13 +31,10 @@ function App() {
       <div class="backdrop-saturate-200" className="container">
         <div className="top">
         <div>
-            <p2 class="text-3xl font-bold text-indigo-500 animate-bounce">TODAY'S WEATHER</p2>
-        </div>
-        <div class="flex justify-center items-center h-screen w-screen">
-          <div class="w-10 h-10 bg-black animate-wiggle"></div>
+            <p2 class="text-3xl font-bold text-indigo-500">TODAY'S WEATHER</p2>
         </div>
           <div className="location">
-             <p>{data.name}</p>
+             {data.main ? <p>{data.name}</p> : null}
              <p>DETROIT</p>
           </div>
           <div className="temp">
@@ -48,9 +45,7 @@ function App() {
             {data.weather ? <p1>{data.weather[0].main}</p1> : null}
             <p1>CLOUDY</p1>
           </div>
-          <div>
-            <img className='drop-shadow-xl' src='images/cloudy.png' alt='cloudy' height="300px" width="450px" />
-          </div>
+          
         </div>
 
         
