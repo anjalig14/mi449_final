@@ -44,7 +44,7 @@ function App() {
           </div>
           <div>
             <img className='drop-shadow-xl' src='images/cloudy.png' alt='cloudy' height="300px" width="450px" />
-            <p2 className="text-3xl font-bold underline">Carry an umbrella!</p2> 
+            <p className="text-3xl font-bold underline">Carry an umbrella!</p> 
           </div> 
         </div>
 
