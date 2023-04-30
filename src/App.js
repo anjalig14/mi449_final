@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div className="app">
-      <div className="search">
+      <div class="animate-[wiggle_1s_ease-in-out_infinite]" className="search">
         <input 
         value={location}
         onChange={event => setLocation(event.target.value)}
@@ -28,7 +28,7 @@ function App() {
         placeholder='ENTER LOCATION'
         type="text"/>
       </div>
-      <div className="container">
+      <div class="backdrop-saturate-200" className="container">
         <div className="top">
           <div className="location">
              <p>{data.name}</p>
@@ -42,6 +42,10 @@ function App() {
             {data.weather ? <p1>{data.weather[0].main}</p1> : null}
             <p1>CLOUDY</p1>
           </div>
+          <div>
+            <img className='drop-shadow-xl' src='images/cloudy.png' alt='cloudy' height="300px" width="450px" />
+            <p2 className="text-3xl font-bold underline">Carry an umbrella!</p2> 
+          </div> 
         </div>
 
         
