@@ -30,6 +30,12 @@ function App() {
       </div>
       <div class="backdrop-saturate-200" className="container">
         <div className="top">
+        <div>
+            <p2 class="text-3xl font-bold text-indigo-500 animate-bounce">TODAY'S WEATHER</p2>
+        </div>
+        <div class="flex justify-center items-center h-screen w-screen">
+          <div class="w-10 h-10 bg-black animate-wiggle"></div>
+        </div>
           <div className="location">
              <p>{data.name}</p>
              <p>DETROIT</p>
@@ -45,9 +51,6 @@ function App() {
           <div>
             <img className='drop-shadow-xl' src='images/cloudy.png' alt='cloudy' height="300px" width="450px" />
           </div>
-          <div>
-            <p2 className="text-3xl font-bold underline">Carry an umbrella!</p2> 
-          </div> 
         </div>
 
         
