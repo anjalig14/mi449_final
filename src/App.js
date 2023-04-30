@@ -5,8 +5,7 @@ function App() {
   const [data, setData] = useState({})
   const [location, setLocation] = useState('')
   
-  //const url ='https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=46cb3a2031676ccd163fe488ad5fb108'
-  const url ='https://air-quality-api.open-meteo.com/v1/air-quality?latitude=52.5235&longitude=13.4115&hourly=pm10,pm2_5&domains=cams_global&timezone=America%2FNew_York'
+  const url ='https://api.openweathermap.org/data/2.5/weather?q=detroit&appid=46cb3a2031676ccd163fe488ad5fb108'
 
   const searchLocation = (event) => {
     if (event.key === 'Enter') {
