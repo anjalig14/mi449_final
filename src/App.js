@@ -29,35 +29,40 @@ function App() {
         type="text"/>
       </div>
       <div className="container">
-          <div className="top">
-            <div className="location">
-              <p>{data.main}</p>
+        <div className="top">
+          <div className="location">
+             <p>{data.name}</p>
+             <p>DETROIT</p>
+          </div>
+          <div className="temp">
+            {data.main ? <h1>{data.main.temp}°F</h1> : null}
+            <h1>46°F</h1>
+          </div>
+          <div className="description">
+            {data.weather ? <p1>{data.weather[0].main}</p1> : null}
+            <p1>CLOUDY</p1>
+          </div>
+        </div>
+
+        
+          <div className="bottom">
+            <div className="feels">
+              {data.main ? <p className='bold'>{data.main.feels_like}°F</p> : null}
+              <p className='bold'>40°F</p>
+              <p1>FEELS LIKE</p1>
             </div>
-            <div className="temp">
-              {data.main ? <h1>{data.main.temp}°F</h1> : null}
+            <div className="humidity">
+              {data.main ? <p className='bold'>{data.main.humidity}%</p> : null}
+              <p className='bold'>88%</p>
+              <p1>HUMIDITY</p1>
             </div>
-            <div className="description">
-              {data.weather ? <p1>{data.weather[0].main}</p1> : null}
+            <div className="wind">
+              {data.wind ? <p className='bold'>{data.wind.speed} MPH</p> : null}
+              <p className='bold'>4 MPH</p>
+              <p1>WIND SPEED</p1>
             </div>
           </div>
-
-          {data.name != undefined &&
-            <div className="bottom">
-              <div className="feels_like">
-                {data.main ? <p className='bold'>{data.main.feels_like}°F</p> : null}
-                <p1>FEELS LIKE</p1>
-              </div>
-              <div className="humidity">
-                {data.main ? <p className='bold'>{data.main.humidity}%</p> : null}
-                <p1>HUMIDITY</p1>
-              </div>
-              <div className="wind">
-                {data.wind ? <p className='bold'>{data.wind.speed} MPH</p> : null}
-                <p1>WIND SPEED</p1>
-              </div>
-            </div>
-          }
-        </div>
+      </div>
     </div>
   );
 }
