@@ -34,12 +34,12 @@ function App() {
             <p2>TODAY'S WEATHER</p2>
         </div>
           <div className="location">
-             {data.main ? <p>{data.name}</p> : null}
+             <p>{data.name}</p>
              <p>DETROIT</p>
           </div>
           <div className="temp">
-            {data.main ? <h1>{data.main.temp}°F</h1> : null}
-            <h1>46°F</h1>
+            {data.main ? <h1 text-2xl font-bold underline >{data.main.temp}°F</h1> : null}
+            <h1 text-2xl font-bold underline>46°F</h1>
           </div>
           <div className="description">
             {data.weather ? <p1>{data.weather[0].main}</p1> : null}
